@@ -6,3 +6,4 @@
 *.shp.xml
 *.prj
 *.sbn
+.ipynb_checkpoints/
