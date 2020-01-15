@@ -1,6 +1,8 @@
 # NHM-AK-POIs
 Points of interest for the National Hydrologic Model Alaska Domain
 
+Contact: Theodore Barnhart, tbarnhart@usgs.gov
+
 ## Purpose
 The purpose of this repository is to facilitate collecting points of interest (POIs) for the U.S. Geological Survey National Hydrologic Model Domain. 
 
@@ -18,7 +20,7 @@ POI data sources:
 - HUC12 pour points in the domain (not included)
 
 ## Note on Projections
-These data are distributed at WGS84 (`EPSG:4326`) for purposes of versioning the POI list using geoJSON; however, this project is working in Alaska Albers Equal Area (`EPSG:3338`).
+These data are distributed as WGS84 (`EPSG:4326`) for purposes of versioning the POI list using geoJSON. We'll convert everything to Alaska Albers Equal Area (`EPSG:3338`) for use in the project.
 
 ## Code Examples
 
@@ -45,4 +47,5 @@ Fork this repository to make changes, then create a pull request so we can merge
 https://help.github.com/en/github/getting-started-with-github/fork-a-repo
 
 ### Pull Request Back to this Repository
+Send us the changes you have made.
 https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork
