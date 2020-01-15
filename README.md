@@ -16,3 +16,6 @@ POI data sources:
 - USGS streamgages in the domain (included)
 - Canadian Streamgages in the domain (included)
 - HUC12 pour points in the domain (not included)
+
+## Note on Projections
+These data are distributed at WGS84 ('EPSG:4326') for purposes of versioning the POI list using geoJSON; however, this project is working in Alaska Albers Equal Area ('EPSG:3338').
