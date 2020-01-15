@@ -4,7 +4,7 @@ Points of interest for the National Hydrologic Model Alaska Domain
 Contact: Theodore Barnhart, tbarnhart@usgs.gov
 
 ## Purpose
-The purpose of this repository is to facilitate collecting points of interest (POIs) for the U.S. Geological Survey National Hydrologic Model Domain. 
+The purpose of this repository is to facilitate collecting points of interest (POIs) for the U.S. Geological Survey National Hydrologic Model Domain. For FY20 we are updating the Alaska Domain geospatial fabric using [MERIT Hydro](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019WR024873) flowlines and catchments as well as adding glaciers! The new geospatial fabric will be different from the one shown below, with hopefully more uniform HRUs and more representative of high-latitude processes.
 
 ## Domain
 The NHM Alaska Domain covers the state of Alaska and the watersheds draining to the state of Alaska. 
