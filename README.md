@@ -12,12 +12,21 @@ The NHM Alaska Domain covers the state of Alaska and the watersheds draining to 
 ![NHM Alaska Domain](/img/ak_domain_gf_v1_1.png)
 
 ## Points of Interest
-The following points of interest have already been gathered. Included data sets are shipped with the geoJSON file in this repository. Data sets that are not included have been omitted from the geoJSON file, but are mentioned here in case a candidate POI is close to a HUC12 pour point, in which case it may not need to be added to the POI list.
+The following points of interest have already been gathered. Pour points from HUC12 watersheds will also be included as POIs; however, we have included them as a separate file because there are so many of them.
 
 POI data sources:
-- USGS streamgages in the domain (included)
-- Canadian Streamgages in the domain (included)
-- HUC12 pour points in the domain (not included)
+- USGS streamgages in the domain
+- Canadian Streamgages in the domain
+- HUC12 pour points in the domain
+
+## Instructions
+Please download and view the POIs and HUC12s and add any points of interest you may have to the POI file. Forking this repository and then cloning to your machine is probably the easiest way to do this (see below). Then send us the updated POI file via a pull request (see below). 
+
+Fields to include:
+- StationID: Identifier for the station.
+- StationName: Name of the station.
+- status: Active / Inactive status.
+- AltStationID: Identifier of other stations that are collocated with the StationID.
 
 ## Note on Projections
 These data are distributed as WGS84 (`EPSG:4326`) for purposes of versioning the POI list using geoJSON. We'll convert everything to Alaska Albers Equal Area (`EPSG:3338`) for use in the project.
