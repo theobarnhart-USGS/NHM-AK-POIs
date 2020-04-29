@@ -7,3 +7,4 @@
 *.prj
 *.sbn
 .ipynb_checkpoints/
+*.ipynb
