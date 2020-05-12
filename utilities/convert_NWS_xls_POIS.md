@@ -25,6 +25,8 @@ names = ['NWSID','startDate','endDate','lat','lon','name','Notes']
 dat = pd.read_excel('../data/Metadata_for_PRMS_group_Feb2020.xlsx', skiprows=2, header = None,
                     names = names, sheet_name='Merged-Use-This', dtype = {'startDate':str,
                                                                             'endDate':str})
+
+dat['NWSID'] = dat.NWSID.map(lambda x: x.strip())
 ```
 
 ```python

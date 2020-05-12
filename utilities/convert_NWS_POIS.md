@@ -21,8 +21,9 @@ from shapely.geometry import Point
 ```
 
 ```python
-names = ['NWSID','USGSID','GOESID','NWSHSA','LAT','LON','DESC']
+names = ['NWSID','stationID','GOESID','NWSHSA','LAT','LON','DESC']
 dat = pd.read_csv('../data/AK_USGS-HADS_SITES.txt', sep='|', skiprows=4, header=None, names=names)
+dat['stationID'] = dat.stationID.map(lambda x: str(x))
 ```
 
 ```python
@@ -43,6 +44,10 @@ dat.head()
 ```
 
 ```python
+dat.dtypes
+```
+
+```python
 geometries = [Point(xy) for xy in zip(dat.LONdd,dat.LATdd)]
 crs = {'init':'epsg:4326'}
 dat = gpd.GeoDataFrame(dat, crs = crs, geometry = geometries)
@@ -53,4 +58,8 @@ dat.to_file('../data/nws_pois.geojson', driver = 'GeoJSON')
 
 ```python
 dat.plot()
+```
+
+```python
+
 ```
